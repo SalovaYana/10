@@ -1,12 +1,12 @@
 
 Введенная строка:
-    df     dfgdfg      df    asd    df     .
+  as  asd  assa  as   aa  as   asdfa    as     . 
 
 Строка без лишних пробелов:
-df  dfgdfg  df  asd  df.
+as asd assa as aa as asdfa as.
 
 Строка без последнего слова и слов, совпадающих с ним
-dfgdfg asd 
+asd assa aa asdfa 
 
 Индивидульное задание - если четное количество букв в слове,то поставить первую букву слова в его середину :
-dfgddfg asd 
+asd asasa aaa asdfa 

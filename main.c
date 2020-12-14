@@ -70,7 +70,7 @@ int main()
         if (istr!=NULL && strcmp(".",istr)!=0)
         {
             /*printf(" ");*/
-            fputs("  ",f);
+            fputs(" ",f);
         }
 
     }
@@ -127,7 +127,28 @@ int main()
 
         if (strlen(c)%2 == 0)
         {
-            for(i=0; i<strlen(c)/2+1; i++)
+            if (strlen(c) == 2)
+            {
+             for(i=0; i<(strlen(c)/2); i++)
+              {
+                even_n[k]=c[i];
+                k++;
+              }
+
+            even_n[k] = first;
+            k++;
+
+            for(i=(strlen(c)/2); i<strlen(c); i++)
+              {
+                even_n[k]=c[i];
+                k++;
+              }
+
+            }
+
+        else
+        {
+            for(i=0; i<strlen(c)/2; i++)
             {
                 even_n[k]=c[i];
                 k++;
@@ -136,13 +157,14 @@ int main()
             even_n[k] = first;
             k++;
 
-            for(i=strlen(c)/2 +1; i<strlen(c); i++)
+            for(i=strlen(c)/2 ; i<strlen(c); i++)
             {
                 even_n[k]=c[i];
                 k++;
             }
 
         }
+      }
 
         else
         {
